@@ -4,6 +4,7 @@
 python3 -m simplebot init "$ADDR" "$PASSWORD"
 python3 -m simplebot -a "$ADDR" set_name "www"
 python3 -m simplebot -a "$ADDR" db -s "simplebot_downloader/mode" "command"
+python3 -m simplebot -a "$ADDR" db -s "simplebot_translator/filter_enabled" "no"
 
 # add the web_comress plugin
 python3 -c "import requests; r=requests.get('https://github.com/adbenitez/simplebot-scripts/raw/master/scripts/web_compress.py'); open('web_compress.py', 'wb').write(r.content)"
