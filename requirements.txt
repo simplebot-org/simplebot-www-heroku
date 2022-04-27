@@ -1,0 +1,9 @@
+git+https://github.com/adbenitez/simplebot_downloader@master#simplebot-downloader
+git+https://github.com/adbenitez/simplebot_instantview@master#simplebot-instantview
+git+https://github.com/adbenitez/simplebot_file2link@master#simplebot-file2link
+
+# required by youtube.py plugin
+youtube-dl
+
+# required by admin.py plugin
+psutil

@@ -1,0 +1,39 @@
+{
+    "name": "Simplebot WWW",
+    "description": "Delta Chat bot that allows to browse the web, download and upload files all by email / Delta Chat",
+    "keywords": [
+        "simplebot",
+        "deltachat",
+        "downloader",
+        "youtube"
+    ],
+    "success_url": "https://delta.chat",
+    "website": "https://github.com/adbenitez/simplebot-www-heroku",
+    "repository": "https://github.com/adbenitez/simplebot-www-heroku",
+    "env": {
+        "ADMIN": {
+            "description": "Your own email address as bot administrator",
+            "required": false,
+            "value": ""
+        },
+        "ADDR": {
+            "description": "The email address of the bot. IMAP access required, for gmail check https://support.google.com/mail/answer/7126229",
+            "value": ""
+        },
+        "PASSWORD": {
+            "description": "The password of the bot's email account",
+            "value": ""
+        }
+    },
+    "addons": [
+    ],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "bot": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
