@@ -4,6 +4,7 @@
 python3 -m simplebot init "$ADDR" "$PASSWORD"
 python3 -m simplebot -a "$ADDR" set_name "www"
 python3 -m simplebot -a "$ADDR" db -s "simplebot_downloader/mode" "command"
+python3 -m simplebot -a "$ADDR" db -s "simplebot_downloader/max_size" "1073741824"  # 1GB
 python3 -m simplebot -a "$ADDR" db -s "simplebot_translator/filter_enabled" "no"
 
 # add the web_comress plugin
