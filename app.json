@@ -23,7 +23,7 @@
         "PASSWORD": {
             "description": "The password of the bot's email account",
             "value": ""
-        }
+        },
         "DELAY": {
             "description": "Time(in seconds) to wait between sent file parts",
             "value": "60"
