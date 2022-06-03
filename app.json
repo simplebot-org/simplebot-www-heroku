@@ -11,9 +11,14 @@
     "website": "https://github.com/adbenitez/simplebot-www-heroku",
     "repository": "https://github.com/adbenitez/simplebot-www-heroku",
     "env": {
-        "ADMIN": {
+
+      "ADMIN": {
             "description": "Your own email address as bot administrator",
             "required": false,
+            "value": ""
+        },
+        "BOTNAME": {
+            "description": "The Name of The Bot",
             "value": ""
         },
         "ADDR": {
