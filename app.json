@@ -1,13 +1,13 @@
 {
     "name": "Simplebot WWW",
-    "description": "Delta Chat bot that allows to browse the web, download and upload files, and more, all by email / Delta Chat",
+    "description": "Delta Chat bot that allows to browse the web, download and upload files, and more, all by e-mail / Delta Chat",
     "keywords": [
         "simplebot",
         "deltachat",
         "downloader",
-        "youtube"
+        "translator"
     ],
-    "success_url": "https://delta.chat",
+    "success_url": "https://github.com/adbenitez/simplebot-www-heroku",
     "website": "https://github.com/adbenitez/simplebot-www-heroku",
     "repository": "https://github.com/adbenitez/simplebot-www-heroku",
     "env": {
@@ -34,6 +34,7 @@
         }
     },
     "addons": [
+      "heroku-postgresql"
     ],
     "buildpacks": [{
         "url": "heroku/python"
