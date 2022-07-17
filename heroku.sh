@@ -2,7 +2,7 @@
 
 # configure the bot
 python3 -m simplebot init "$ADDR" "$PASSWORD"
-python3 -m simplebot -a "$ADDR" set_name "www"
+python3 -m simplebot -a "$ADDR" set_name "$BOT_NAME"
 python3 -m simplebot -a "$ADDR" db -s "simplebot_downloader/mode" "command"
 python3 -m simplebot -a "$ADDR" db -s "simplebot_downloader/max_size" "1073741824"  # 1GB
 python3 -m simplebot -a "$ADDR" db -s "simplebot_downloader/delay" $DELAY

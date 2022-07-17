@@ -24,6 +24,10 @@
             "description": "The password of the bot's email account",
             "value": ""
         },
+        "BOT_NAME": {
+            "description": "The bot's display name",
+            "value": "www"
+        },
         "DELAY": {
             "description": "Time(in seconds) to wait between sent file parts",
             "value": "60"
