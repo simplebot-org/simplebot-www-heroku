@@ -38,7 +38,9 @@ if __name__ == "__main__":
     except Exception:
         with conn:
             with conn.cursor() as cur:
-                cur.execute("SELECT value FROM config WHERE key = %s;", ("private_key"))
+                cur.execute(
+                    "SELECT value FROM config WHERE key = %s;", ("private_key",)
+                )
                 set_key(cur.fetchone()[0])
     finally:
         conn.close()
